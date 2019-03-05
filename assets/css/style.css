@@ -1,0 +1,21 @@
+body {
+    background-image: url("../images/train-station.jpg")
+  }
+  
+  #heading {
+    font-family: Arial, Helvetica, sans-serif sans-serif;
+    font-weight: bold;
+  }
+  
+  #heading2, #heading3 {
+    font-family: Courier New, Courier, monospace;
+    font-style: oblique;
+  }
+  
+  .panel-title {
+    font-weight: bold;
+  }
+  
+  th {
+    font-weight: bold;
+  }
