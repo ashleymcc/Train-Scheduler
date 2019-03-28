@@ -1,4 +1,4 @@
-// Initialize Firebase
+// Initialize Firebase + all personal keys
 var config = {
     apiKey: "AIzaSyAEBqnsgYgAfnvU8COVaCN4yE3N_2QIL2o",
     authDomain: "trains-de761.firebaseapp.com",
@@ -8,22 +8,21 @@ var config = {
     messagingSenderId: "456675468947"
   };
 
+//setting vars
 firebase.initializeApp(config);
-
-  
   var database = firebase.database();
-  
   var trainName = "";
   var destination = "";
   var startTime = "";
   var frequency = 0;
-  
+  //using moment to set time (HH:mm format)
   function currentTime() {
     var current = moment().format('LT');
     $("#currentTime").html(current);
     setTimeout(currentTime, 1000);
   };
   
+//
   $(".form-field").on("keyup", function() {
     var traintemp = $("#train-name").val().trim();
     var citytemp = $("#destination").val().trim();
